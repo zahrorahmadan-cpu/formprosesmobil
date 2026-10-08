@@ -1,0 +1,178 @@
+.navbar{
+    background: white;
+    padding: 12px 0 0;
+    border-bottom:1px solid rgb(225, 241, 252);
+    z-index:1000;
+}
+.brand{
+    color:#123b70;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+  
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.brand i{
+    color: #1473e6;
+    margin-right: 7px;
+}
+.menu{
+    background:#f1f7ff;
+    padding:10px;
+    border-top:1px solid #dbeafe;
+    text-decoration: none;
+}
+.menu a{
+    color:#020b14;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight: 600;
+    position:relative;
+    transition:.3s;
+}
+.menu a:hover{
+    color: #1473e6;
+}
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-5px;
+    height:2px;
+    background:#1473e6;
+    transform:translateX(-50%);
+    transition: .3s;
+}
+.menu a:hover::after{
+    width:70%;
+}
+.hero{
+    width:100%;
+    z-index:-10;
+}
+.hero-slide{
+    height: 80vh;
+    min-height: 550px;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+.hero-bg{
+    position: absolute;
+    inset:0;
+    background-image: url(asset/mobil\ fiks.jpeg);
+    background-size:cover;
+    background-position:center;
+    z-index:-10;
+}
+.hero-bg1{
+    position: absolute;
+    inset:0;
+    background-image: url(asset/lambo\ 1.webp);
+    background-size:cover;
+    background-position:center;
+    z-index:-10;
+}
+.hero-bg2{
+    position: absolute;
+    inset:0;
+    background-image: url(asset/lambo\ 3.webp);
+    background-size:cover;
+    background-position:center;
+    z-index:-10;
+}
+.overlay{
+    position:absolute;
+    inset:0;
+    background: linear-gradient(
+        90deg,
+        rgba(166, 236, 249, 0.863) 0%,
+        rgba(210, 246, 255, 0.792) 25%,
+        rgba(255, 255, 255, 0.594) 48%,
+        rgba(255, 255, 255, 0.25) 75%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    
+}
+
+.hero-small {
+    color: #1473e6;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    color: #123b70;
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #1473e6;
+}
+
+.deskripsi {
+    color: #52677d;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+@media (max-width:992px){
+    .hero-slide{
+        min-height:550px;
+    }
+    .hero-content{
+        padding-left:30px;
+    }
+    .hero-content h1{
+        font-size:48px;
+    }
+}
+@media(max-width:576px){
+    .hero-slide{
+        height:75vh;
+        min-height:500px;
+    }
+}
+.about{
+    color: #123b70;
+    letter-spacing:2px;
+}
+.about2{
+    color: #123b70;
+    letter-spacing:2px;
+}
+.footer-link {
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #b9dcff !important;
+  transform: translateX(6px);
+}
+.footer-logo{
+    width:150x;
+}
